@@ -1,0 +1,37 @@
+{
+  "name": "my-kindle-clippings",
+  "version": "1.0.0",
+  "description": "Clippings from my Kindle",
+  "main": "lib/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "requirejs": "^2.3.5",
+    "tokenizer": "^1.1.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "karma": "^1.7.1",
+    "karma-requirejs": "^1.1.0",
+    "jasmine-core": "^2.8.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
+  },
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmatheu/my-kindle-clippings.git"
+  },
+  "keywords": [
+    "kindle"
+  ],
+  "author": "Gonzalo Matheu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gmatheu/my-kindle-clippings/issues"
+  },
+  "homepage": "https://github.com/gmatheu/my-kindle-clippings#readme"
+}
