@@ -16,10 +16,12 @@
     "karma-requirejs": "^1.1.0",
     "jasmine-core": "^2.8.0",
     "karma-chrome-launcher": "^2.2.0",
-    "karma-jasmine": "^1.1.0"
+    "karma-jasmine": "^1.1.0",
+    "browser-sync": "*"
   },
   "scripts": {
-    "test": "karma start --single-run"
+    "test": "karma start --single-run",
+    "browser-sync": "browser-sync start --server --startPath '/app' --files 'lib/*,app/*'"
   },
   "repository": {
     "type": "git",
