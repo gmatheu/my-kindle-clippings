@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link data-require="semantic-ui@*" data-semver="2.1.8" rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script data-require="jquery@*" data-semver="3.2.1" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script data-require="semantic-ui@*" data-semver="2.1.8" src="https://cdn.jsdelivr.net/semantic-ui/2.1.8/semantic.min.js"></script>
+    <script data-require="semantic-ui@*" data-semver="2.1.8" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/visibility.min.js"></script>
+    <script data-require="requirejs@*" data-main="script" data-semver="2.3.2" src="http://requirejs.org/docs/release/2.3.2/minified/require.js"></script>
+  </head>
+
+  <body>
+    
+  <div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        My Kindle Clippings
+      </h1>
+      <h2>Quotes from your favorite books.</h2>
+      <div class="ui huge primary button">Random Quote<i class="right arrow icon"></i></div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid" data-bind="foreach: clippings">
+      <div class="center aligned row">
+        <div class="column">
+          <h3 data-bind="text: clipping"></h3>
+          <p data-bind="text: book">Loading...</p>
+          <span data-bind="text: kind"></span>
+          <span data-bind="text: date"></span>
+          <span data-bind="text: position"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+      <div class="center aligned row">
+        <div class="column">
+          <button class="ui huge primary button" data-bind="click: fetchMoreQuotes">More Quotes<i class="right arrow icon"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Sitemap</a>
+            <a href="#" class="item">Contact Us</a>
+          </div>
+        </div>
+        <div class="ten wide column">
+          <h4 class="ui inverted header">Footer Header</h4>
+          <p>Source <span data-bind="text: clippingsSource">-</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
